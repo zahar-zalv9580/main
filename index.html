@@ -1,0 +1,339 @@
+<!doctype html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title>Пригоди почалися!</title>
+  </head>
+
+  <body>
+    
+    <section id="start" class="scene active"> 
+      <h2>Початок</h2> 
+      <p class="description"><span id='nameof_charachter'>А(Автор):</span> Ви - звичайний власник будинку в нашому світі. Здається, нічого не передбачало біди... Але..</p> 
+        <button data-target="scene1">Далі</button> 
+    </section>
+
+
+   <section id="scene1" class="scene"> 
+     <h2>Портал на подвір`ї</h2> 
+     <p class="description"><span id='nameof_charachter'>А:</span> Раптом, посеред газону, з`являться синій обруч із яскравого світла. "Це - магія" - підказує вам інтуіція. Підійти ближче?</p> 
+      <button data-target="scene2">Так</button> 
+      <button class ='endingbtn'  data-target="ending0">Ні</button> 
+   </section>
+
+
+   <section id="scene2" class="scene"> 
+      <h2>Портал</h2> 
+      <p class="description"><span id='nameof_charachter'>А:</span> Вас затягує у магічний світ пригод. Юхууу!!</p> 
+      <button data-target="naming">Далі</button> 
+   </section>
+
+
+   <section id="naming" class="scene"> 
+      <h2>Портал</h2> 
+      <p class="description" id='inputext'><span id='nameof_charachter'>??:</span> Як звати тебе, могутній чаклуне?</p> 
+    <input id="name_field" value="" type="text" class="input"  placeholder="Введіть ім'я свого персонажа" >
+      <button data-target="scene3" id='nameBtn'>Далі</button> 
+   </section>
+
+
+   <section id="scene3" class="scene"> 
+      <h2>Ліс</h2> 
+      <p class="description"><span id='nameof_charachter'>А:</span> Вітаю <span class="playername"></span>, ви в лісі!</p> 
+      <button data-target="scene4">Далі</button> 
+   </section>
+
+
+   <section id="scene4" class="scene"> 
+     <h2>Далекі Руїни</h2> 
+     <p class="description"><span id='nameof_charachter'>А:</span> Ви бачете Дивні Руїни. Розвідати їх?</p> 
+      <button data-target="scene5">Так</button> 
+      <button data-target="scene6">Ні</button> 
+   </section>
+
+
+   <section id="scene5" class="scene"> 
+     <h2>Руїни</h2> 
+     <p class="description"><span id='nameof_charachter'>А:</span> Ого! Це - не звичайні руїни, а скарбниця гнома! Що робимо, <span class="playername"></span>?</p> 
+      <button data-target="scene5a">Вбити гнома</button> 
+      <button data-target="scene5b">Зробити договір</button> 
+      <button data-target="scene6">Втекти</button> 
+   </section>
+
+
+   <section id="scene5b" class="scene"> 
+      <h2>Руїни</h2> 
+      <p class="description"><span id='nameof_charachter'>Гном Альтерн:</span> Дякую <span class="playername"></span>, за вашу приязність! Ось дорога до Шахового Замку, можливо, там допоможуть тобі!</p> 
+      <button data-target="scene7">Йти</button> 
+   </section>
+
+
+   <section id="scene5a" class="scene"> 
+      <h2>Руїни</h2> 
+      <p class="description"><span id='nameof_charachter'>А:</span> Ти... монстр...</p> 
+      <button class ='endingbtn'  data-target="ending1">Мені погано...</button> 
+   </section>
+
+
+   <section id="scene6" class="scene"> 
+     <h2>Роздоріжжя</h2> 
+     <p class="description"><span id='nameof_charachter'>А:</span> Перед вами роздоріжжя, <span class="playername"></span> ! Куди йдемо?</p> 
+      <button data-target="scene7">До замку</button> 
+      <button data-target="dragon">В печеру</button> 
+      <button data-target="potato">До ???</button> 
+      <button class="secret" data-target="secret">=)</button> 
+   </section>
+
+
+   <section id="secret" class="scene"> 
+     <h2>Секретний шлях</h2> 
+     <p class="description"><span id='nameof_charachter'>А:</span> ??? окей... Перед тобою готель. Що робимо?</p> 
+      <button class ='endingbtn'  data-target="ending9">Зайти</button> 
+      <button data-target="scene6">Вернутися</button> 
+      <button data-target="secret2">Піти далі</button>  
+   </section>
+
+
+   <section id="secret2" class="scene"> 
+     <h2>Секретний шлях 2</h2> 
+     <p class="description"><span id='nameof_charachter'>А:</span> Перед вами портал. Зайти?</p> 
+      <button class ='endingbtn'  data-target="ending10">Зайти</button> 
+      <button data-target="secret">Вернутися</button>  
+   </section>
+
+
+   <section id="dragon" class="scene"> 
+     <h2>Лігово дракона</h2> 
+     <p class="description"><span id='nameof_charachter'>Дракон Міракс:</span> Прив. Давай так - ти мене не чіпаєш, я роблю на взаєм. Ок?</p> 
+      <button class ='endingbtn'  data-target="ending8">Вбити дракона</button> 
+      <button data-target="scene6">Ок</button> 
+      <button class ='endingbtn'  data-target="ending8">Образити дракона</button> 
+   </section>
+
+
+   <section id="scene7" class="scene"> 
+     <h2>Міст</h2> 
+     <p class="description"><span id='nameof_charachter'>Лицар:</span> Доброго дня! Якщо вам до Шахового Замку, то... вам сюди!<span class="typedtext"></span></p> 
+      <button data-target="scene8">Пройти до ШЗ</button> 
+      <button data-target="scene8b">Вдарити лицаря</button> 
+   </section>
+
+
+   <section id="scene8b" class="scene"> 
+      <h2>Лицар злий...</h2> 
+      <p class="description"><span id='nameof_charachter'>Л:</span> Ах ти ж! Силою, данною мені, відправляю тебе в Картопляндію!</p> 
+      <button data-target="potato">Ні-і-і!</button> 
+   </section>
+
+
+   <section id="scene8" class="scene"> 
+     <h2>Шаховий Замок</h2> 
+     <p class="description"><span id='nameof_charachter'>Шаховий маг:</span> Привіт... Зіграєш партію зі мною...?</p> 
+      <button data-target="chesspuzzle">Граємо</button> 
+      <button class='cheat' data-target="chesscheat">Граємо (махлюватиму)</button> 
+      <button data-target="scene7">Втеча(?)</button>  
+   </section>
+
+
+   <section id="chesspuzzle" class="scene"> 
+     <h2>Позиція</h2> 
+     <p class="description">Який хід найкращий?</p> 
+<img class='puzzlechess' src="https://i.postimg.cc/Bv3xStjF/2025-05-08-214623.png"/>
+      <button data-target="correct">Ne7+</button> 
+      <button data-target="wrong">Nh6+</button> 
+   </section>
+
+
+   <section id="chesscheat" class="scene"> 
+      <h2>Нечесна гра</h2> 
+      <p class="description"><span id='nameof_charachter'>ШМ:</span> Цього разу, я пробачаю. Не роби так більше!</p> 
+      <button data-target="scene8">ОК</button> 
+   </section>
+
+
+   <section id="wrong" class="scene"> 
+      <h2>Неправильно!</h2> 
+      <p class="description"><span id='nameof_charachter'>ШМ:</span> Що ж, тепер ти - моя фігура!</p> 
+      <button class ='endingbtn'  data-target="ending2">??</button> 
+   </section>
+
+
+   <section id="correct" class="scene"> 
+      <h2>Прекрасно!</h2> 
+      <p class="description"><span id='nameof_charachter'>ШМ:</span> Що ж, ти - мастер! Біжи, сину мій, нехай магія ходів покаже тобі шлях!</p> 
+      <button data-target="scene9">Дякую!</button> 
+   </section>
+
+
+   <section id="scene9" class="scene"> 
+      <h2>Арки</h2> 
+      <p class="description"><span id='nameof_charachter'>А:</span> За ШЗ - велика стежка. Знову 3 стежки!</p> 
+      <button data-target="scene9_1">Далі</button> 
+   </section>
+
+
+   <section id="scene9_1" class="scene"> 
+      <h2>Арки</h2> 
+      <p class="description"><span id='nameof_charachter'>А:</span> Вдалені ви бачете знайомі силуети...
+        Попереду 3 арки. Поряд з першою - дракон, з другою - гном, а на третій - табличка "НЕ ЗАХОДЬ, ЯКЩО ХОЧЕШ ЖИТИ". Що робити?</p> 
+      <button data-target="potato">Арка з табличкою</button> 
+      <button data-target="dragonarc">Арка з драконом</button>
+      <button data-target="gnomearc">Арка з гномом</button>
+   </section>
+
+
+   <section id="gnomearc" class="scene"> 
+      <h2>Арка гнома</h2> 
+      <p class="description"><span id='nameof_charachter'>Г:</span> Все просто - якщо згадаєш ім"я дракона - йдеш. Ні - стаєш його обідом)
+      </p> 
+      <button class ='endingbtn'  data-target="ending3">Драко</button> 
+      <button data-target="almosttheend">Міракс</button>
+      <button class ='endingbtn'  data-target="ending3">Міксер</button>
+   </section>
+
+
+   <section id="dragonarc" class="scene"> 
+      <h2>Арка дракона</h2> 
+      <p class="description"><span id='nameof_charachter'>Д:</span> Все просто - правильно вгадаєш загадку - зможеш вибратися. Ні - тоді я обідаю сьогодні...
+        
+        Якою рукою належить мішати чай?</p> 
+      <button class ='endingbtn'  data-target="ending3">Чайною</button> 
+      <button data-target="dragonarc2">Ложкою</button>
+      <button class ='endingbtn'  data-target="ending3">???</button>
+   </section>
+
+
+   <section id="dragonarc2" class="scene"> 
+      <h2>Арка дракона</h2> 
+      <p class="description"><span id='nameof_charachter'>Д:</span> Окей...
+        
+        Що 100% належить вам, але інші люди чомусь користуються ним частіше?</p> 
+      <button data-target="dragonarc3">Ім"я</button> 
+      <button class ='endingbtn'  data-target="ending3">Гроші</button>
+      <button class ='endingbtn'  data-target="ending3">???</button>
+   </section>
+
+
+   <section id="dragonarc3" class="scene"> 
+      <h2>Арка дракона</h2> 
+      <p class="description"><span id='nameof_charachter'>Д:</span> Окей...
+        
+        Лікар призначив вам три таблетки, які слід пити кожні 30 хвилин. За скільки ви їх усі вип'єте? </p> 
+      <button data-target="dragonarcsuccess">1 година</button> 
+      <button class ='endingbtn'  data-target="ending3">1.5 годин</button>
+      <button class ='endingbtn' data-target="ending3">???</button>
+   </section>
+
+
+   <section id="dragonarcsuccess" class="scene"> 
+      <h2>Арка дракона</h2> 
+      <p class="description"><span id='nameof_charachter'>Д:</span> Молодець! Я в тебе вірив! Я думаю, що вихід - у ось цій ущелині. Бувай, друже!</p> 
+      <button data-target="almosttheend">Бувай!😢</button> 
+   </section>
+
+
+   <section id="almosttheend" class="scene"> 
+      <h2>Серце Міру</h2> 
+      <p class="description">Перед вами - трон... Ззаду - відкрився портал в наш світ... Що робимо, приятелю?</p> 
+      <button class ='endingbtn'  data-target="ending4">Сісти на трон</button> 
+      <button class ='endingbtn'  data-target="ending5">Побігти в портал ззаду</button>
+      <button class ='endingbtn'  data-target="ending6">Розбити трон</button>
+   </section>
+
+
+   <section id="potato" class="scene"> 
+      <h2>???</h2> 
+      <p class="description">Світ із картоплі... Це повний треш...</p> 
+      <button class ='endingbtn'  data-target="ending7">Без коментаріїв...</button> 
+   </section>
+
+
+   <section id="ending4" class="scene"> 
+      <h2>Кінцівка №5: Хранитель світів</h2> 
+      <p class="description">Сівши на чарівний трон, виготовлений із дерев Нарнії, на якому накледені закляття Гаррі Поттера, Ви - Великий Правитель <span class="playername"></span>, стали володарем світів. Все що відбулося далі - інша історія.</p> 
+      <button data-target="scene1">Заново</button> 
+      <a href=''>Меню</a>
+   </section>
+
+
+   <section id="ending5" class="scene"> 
+      <h2>Кінцівка №6: Хеппі енд!</h2> 
+      <p class="description">Що ж - вітаю! Тепер ви - вдома, попиваєте чай із кавою. Прекрасно... А, і ще одне. У вас тепер є... чарівна шахова дошка, фігури на якій... оживають.</p> 
+      <button data-target="scene1">Заново</button> 
+      <a href=''>Меню</a>
+   </section>
+
+
+   <section id="ending6" class="scene"> 
+      <h2>Кінцівка №7: Справжній кінець.</h2> 
+      <p class="description">Розбивши трон, ви отримали магію всіх світів... Мені трохи страшно...</p> 
+      <button data-target="scene1">Заново</button> 
+      <a href=''>Меню</a>
+   </section>
+
+
+   <section id="ending7" class="scene"> 
+      <h2>Кінцівка №8: Картопляндія</h2> 
+      <p class="description">Пасхалка ;)</p> 
+      <button data-target="scene1">Заново</button> 
+   </section>
+
+
+   <section id="ending8" class="scene"> 
+      <h2>Кінцівка №9: Вас вбив дракон</h2> 
+      <p class="description">Навіщо ти до нього ліз???</p> 
+      <button data-target="scene1">Заново</button> 
+   </section>
+
+
+   <section id="ending9" class="scene"> 
+      <h2>Кінцівка №10: Готель "Маґніфік"</h2> 
+      <p class="description">Ви зайшли в магічний готель "Маґніфік".</p> 
+      <button data-target="scene1">Заново</button> 
+      <a href='https://bookclub.ua/catalog/books/fantasy_books/gotel-magnifik-ilyustrovaniy-zriz?srsltid=AfmBOoo2cLPD-lcL-7-4uynoM-n6ghILJkvU71xuxPT3_eTmFinhZPEX'>Посилання на книгу, кому цікаво</a> 
+   </section>
+
+
+   <section id="ending10" class="scene"> 
+      <h2>Кінцівка №11: Хоґвартс</h2> 
+      <p class="description">Ви зайшли в портал, та опинилися на березі моря. Вдалені ви бачите схожий замок. Зустрінемося з Гаррі Поттером)?</p> 
+      <button data-target="scene1">Заново</button> 
+   </section>
+
+
+   <section id="ending0" class="scene"> 
+      <h2>Кінцівка №1: Втеча</h2> 
+      <p class="description">Ти втік подалі від поратлу, але... чому?</p> 
+      <button data-target="scene1">Заново</button> 
+   </section>
+
+
+   <section id="ending1" class="scene"> 
+      <h2>Кінцівка №2: Вбитий магією мертвого гнома</h2> 
+      <p class="description">Чому ти це зробив???</p> 
+      <button data-target="scene1">Заново</button> 
+   </section>
+
+
+   <section id="ending2" class="scene"> 
+      <h2>Кінцівка №3: Перетворений на фігуру</h2> 
+      <p class="description">Що ж... Тепер ходитимуть тобою)</p> 
+      <button data-target="scene1">Заново</button> 
+   </section>
+
+
+   <section id="ending3" class="scene"> 
+      <h2>Кінцівка №4: Вас з'їв дракон...</h2> 
+      <p class="description">Відповідь: не скажу)</p> 
+      <button data-target="scene1">Заново</button> 
+   </section>
+
+
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  
+      <script src="script.js"></script>
+  </body>
+</html>

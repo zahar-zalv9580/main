@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+#nameof_charachter{
+  font-size: 45px;
+  color: #ffffff;
+  font-family: "Great Vibes", cursive, bold;
+  text-shadow:  0px 0px 20px #000000;
+}
+#inputext{
+  color: black;
+}
+.input {
+ background-color: #383838;
+ border: 1ex solid none;
+ border-top-width: 0.2em;
+ margin: 0;
+ padding: 0;
+ color: #383838;
+ word-wrap: break-word;
+ outline: 7px solid #383838;
+ height: 30px;
+ font-size: 17px;
+ text-align: center;
+ transition: all 1s;
+ max-width: 190px;
+ font-weight: bold;
+ font-family: 'Courier New', Courier, monospace;
+}
+
+.input:hover {
+ border-top-width: 0.2em;
+ background-color: #f1e8e8;
+}
+
+.input:focus {
+ border-top-width: 0.2em;
+ background-color: #f1e8e8;
+}
+h2{
+  font-size: xx-large;
+  font-family: "Great Vibes", cursive;
+  color: black;
+  text-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+.description{
+  color:white;
+  text-shadow: 0px 0px 10px rgba(3, 48, 52, 1);
+}
+body{
+  font-family: "Shantell Sans", cursive; 
+  background-color: rgb(4, 62, 13);
+}
+.secret{
+  position: absolute;
+  top:99vh;
+  left:99vh;
+  background-color: transparent;
+  border: none;
+}
+.scene{
+    display:none;
+  }
+  .scene.active{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+  }
+  button {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    color: rgb(167, 127, 32);
+    border: 2px solid rgb(167, 127, 32);
+    border-radius: 34px;
+    background-color: rgb(61, 51, 8);
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+  }
+  
+  button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: rgb(193, 157, 98);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  button:hover::before {
+    scale: 3;
+  }
+  
+  button:hover {
+    color: #ffffff;
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgba(193, 150, 98, 0.5);
+  }
+  
+  button:active {
+    scale: 1;
+  }
+.puzzlechess{
+  width: 50vh;
+  height: 50vh;
+}
+#ending0, #ending1, #ending2, #ending3, #ending6, #ending5, #ending6, #ending7, #ending8, #ending9, #ending10{
+  background:url(https://i.postimg.cc/9FsTkYL0/Chat-GPT-Image-1-2025-22-06-26.pngg) no-repeat center center/cover;
+}
+#start{
+    background:url("https://i.postimg.cc/5037bRXf/scene0a.png") no-repeat center center/cover;
+}
+#scene1{
+    background:url("https://i.postimg.cc/VsD8f7tG/Chat-GPT-Image-2-2025-20-22-38.png") no-repeat center center/cover;
+}
+#scene2{
+    background:url("https://i.postimg.cc/VsD8f7tG/Chat-GPT-Image-2-2025-20-22-38.png") no-repeat center center/cover;
+}
+#naming{
+  background-color: white;
+}
+#scene3, #scene4{
+  background: url(https://i.postimg.cc/YqRJCCsB/Chat-GPT-Image-7-2025-21-25-24.png) no-repeat center center/cover;
+}
+#scene5, #scene5a, #scene5b{
+  background:url(https://i.postimg.cc/j2g0M5K0/Chat-GPT-Image-2-2025-21-23-24.png) no-repeat center center/cover;
+}
+#scene6{
+  background:url(https://i.postimg.cc/Gtqgz7cK/image.png) no-repeat center center/cover;
+}
+#scene7, #scene8b{
+  background:url(https://i.postimg.cc/fRRyHBNP/Chat-GPT-Image-8-2025-20-01-08.png) no-repeat center center/cover;
+}
+#scene8, #correct, #wrong, #chesspuzzle, #chesscheat{
+  background: url(https://i.postimg.cc/GmJ3vppd/Chat-GPT-Image-8-2025-23-24-21.png) no-repeat center center/cover;
+}
+#scene9{
+  background: url(https://i.postimg.cc/m2NpbJwp/Chat-GPT-Image-9-2025-17-58-00.png) no-repeat center center/cover;
+}
+#scene9_1{
+  background: url(https://i.postimg.cc/fThgQDx0/Chat-GPT-Image-9-2025-17-58-07.png) no-repeat center center/cover;
+}
+#potato{
+  background: url(https://i.postimg.cc/W159ZZxM/Chat-GPT-Image-9-2025-17-57-57.png) no-repeat center center/cover;
+}
+#dragon{
+  background: url(https://i.postimg.cc/Qd84VmY8/Chat-GPT-Image-9-2025-17-57-56.png) no-repeat center center/cover;
+}
+#secret2{
+  background: url(https://i.postimg.cc/MHkCMBgW/Gemini-Generated-Image-n6nscen6nscen6ns.jpg) no-repeat center center/cover;
+}
+#secret{
+  background: url(https://i.postimg.cc/d38z81KG/Gemini-Generated-Image-88t1mc88t1mc88t1.jpg) no-repeat center center/cover;
+}
+#dragonarc, #dragonarc2, #dragonarc3, #dragonarcsuccess{
+  background: url(https://i.postimg.cc/jd4p2Lcb/Gemini-Generated-Image-2zxxih2zxxih2zxx.jpg) no-repeat center center/cover;
+}
+#gnomearc{
+  background: url(https://i.postimg.cc/pVzbN0ny/Gemini-Generated-Image-1h490g1h490g1h49.jpg) no-repeat center center/cover;
+}
+#almosttheend{
+  background: url(https://i.postimg.cc/dtFMJ886/Gemini-Generated-Image-19sg7n19sg7n19sg.jpg) no-repeat center center/cover;
+}
