@@ -5,6 +5,17 @@
   font-family: "Great Vibes", cursive, bold;
   text-shadow:  0px 0px 20px #000000;
 }
+.watermark{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-content: flex-end;
+}
+.watermark::before{
+  content: url(logo.png);
+}
 #inputext{
   color: black;
 }
@@ -112,7 +123,7 @@ body{
   width: 50vh;
   height: 50vh;
 }
-#ending0, #ending1, #ending2, #ending3, #ending6, #ending5, #ending6, #ending7, #ending8, #ending9, #ending10{
+#mainmenu, #ending0, #ending1, #ending2, #ending3, #ending6, #ending5, #ending6, #ending7, #ending8, #ending9, #ending10{
   background:url(https://i.postimg.cc/9FsTkYL0/Chat-GPT-Image-1-2025-22-06-26.pngg) no-repeat center center/cover;
 }
 #start{
